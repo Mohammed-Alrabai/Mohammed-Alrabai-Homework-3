@@ -1,0 +1,36 @@
+:root{
+    --primary-color: #6FA5DE;
+    --secondary-color: #57A2AC;
+    --tertiary-color: #6576A1;
+    --text-color: #223251;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.myStyle {
+    color: var(--text-color) !important;
+    font-weight: 500;
+}
+.hover{
+    transition: 0.3s;
+}
+.bg-gray{
+    background-color: #F2F5F8 !important;
+    padding-top: 30px;
+}
+.hover:hover{
+    color: var(--text-color) !important;
+}
+
+.btn-primary{
+    background-color: var(--primary-color) !important;
+}
+.btn-primary:hover{
+    background-color: var(--secondary-color) !important;
+}
+.btn-secondary{
+    background-color: var(--secondary-color) !important;
+}
+.btn-secondary:hover{
+    background-color: var(--tertiary-color) !important;
+}   

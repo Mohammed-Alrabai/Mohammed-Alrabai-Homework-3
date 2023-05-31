@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Blog Dom</title>
+  </head>
+  <body style="overflow-x: hidden">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 px-5">
+      <div class="container-fluid">
+        <a class="navbar-brand myStyle" href="/index.html">Blog Dom</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active hover" aria-current="page" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hover" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active hover" href="#">Pricing</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Blog Card Section -->
+    <div class="row mb-3 text-center px-5 bg-gray">
+      <div class="col-md-12 themed-grid-col">
+        <div class="container my-5">
+          <div class="row g-5">
+            <div class="col-lg-12 col-md-12">
+              <div class="card h-100">
+                <img
+                  src="https://source.unsplash.com/random"
+                  class="card-img-top h-50"
+                  alt="..." />
+                <div class="card-body">
+                  <a
+                    href="/blog"
+                    class="card-title pointer-event text-dark text-decoration-none fs-3"
+                    style="cursor: pointer"
+                    >The Benefits of Regular Exercise</a
+                  >
+                  <hr />
+                  <p class="card-text">
+                    Time management is crucial for productivity and success. Some useful tips include prioritizing tasks, breaking them down into smaller steps, setting realistic deadlines, avoiding multitasking, and minimizing distractions. By implementing these strategies, you can maximize your productivity, reduce stress, and achieve a better work-life balance.
+                  </p>
+                </div>
+                <div class="btn">
+                  <button
+                    class="btn btn-primary"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseExample"
+                    aria-expanded="false"
+                    id="btn-like">
+                    Like <span id="like-span"></span>
+                  </button>
+                </div>
+                <hr>
+                <div class="showComments">
+                  <div id="comment-contact" class="row  g-3">
+                    
+                  </div>
+                </div>
+                <hr>
+                <div class="comment d-flex align-items-center justify-content-center">
+                  <form id="form-comment" class="row g-3 col-lg-4 w-50 d-flex align-items-center justify-content-center"
+                  >
+                    <div class="col-md-12">
+                    <div class="col-12 pb-2">
+                      <label for="inputAddress" class="form-label"
+                        >name</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="input1"
+                        placeholder="name" />
+                    </div>
+                    <div class="col-12 pb-3">
+                      <label for="inputAddress2" class="form-label"
+                        >Comment</label
+                      >
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="input2"
+                        placeholder="Comment" />
+                    </div>
+                    <div class="col-12 pb-3">
+                      <button id="btn-comment" type="submit" class="btn btn-primary">
+                        Comment
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="col-md-4 themed-grid-col" style="border-left-style: groove">
+        <form class="row g-3">
+          <div class="col-12">
+            <label for="inputEmail4" class="form-label">Your Name</label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Your Name" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Blog Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              placeholder="Blog Title" />
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Blog Content</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputAddress2"
+              placeholder="Blog Content" />
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Create</button>
+          </div>
+        </form>
+      </div> -->
+    </div>
+        <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section
+        class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+      >
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Blog Dom</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <h5>Made with ❤️ by @Mohammed-Alrabai</h5>
+        </div>
+        <!-- Right -->
+      </section>
+      </footer>
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"></script>
+  </body>
+</html>
